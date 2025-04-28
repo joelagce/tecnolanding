@@ -213,7 +213,7 @@ export default function Home() {
             {/* Testimonio 3 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
             <div className=" mb-4">
-                 <video src='/reviews.MOV' className='w-full rounded-md mb-4' controls></video>
+                 <img src='/reviews2.png' className='w-full rounded-md mb-4' ></img>
                 <div>
                   <h4 className="font-bold text-black">Ibeth Trinidad.</h4>
                   <div className="flex text-yellow-400">
