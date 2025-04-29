@@ -62,8 +62,8 @@ export default function Home() {
 
             {/* Precios */}
             <div className="flex items-center gap-4">
-              <span className="text-3xl text-white font-bold">$349</span>
-              <span className="text-xl text-white line-through">$450</span>
+              <span className="text-3xl text-white font-bold">$349.00</span>
+              <span className="text-xl text-white line-through">$450.00</span>
               <span className="bg-black text-white px-3 py-1 rounded-md text-sm">AHORRA 25%</span>
             </div>
 
@@ -77,8 +77,8 @@ export default function Home() {
                   <p className="">Precio normal</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-bold ">$449</p>
-                  <p className="line-through">$600</p>
+                  <p className="font-bold ">$349.00</p>
+                  <p className="line-through">$600.00</p>
                 </div>
               </div>
 
@@ -91,8 +91,8 @@ export default function Home() {
                   <p className="">Diseña distintos modelos</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-bold ">$898</p>
-                  <p className=" line-through">$1,800</p>
+                  <p className="font-bold ">$700.00</p>
+                  <p className=" line-through">$1050.00</p>
                 </div>
               </div>
                <Link href={activeBuy === 0 ? "https://buy.stripe.com/test_9AQ01VeWfb8V9XO6oo" : "https://buy.stripe.com/test_fZe7un7tNel71riaEF"}>
@@ -213,7 +213,16 @@ export default function Home() {
             {/* Testimonio 3 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
             <div className=" mb-4">
-                 <video src='/reviews.MOV' className='w-full rounded-md mb-4' controls></video>
+              
+                 <div className="relative w-full" style={{ paddingTop: '150.25%' }}>
+                  <iframe
+                    src="https://player.vimeo.com/video/1079648337?h=f1cf8009aa"
+                    className="absolute top-0 left-0 w-full h-full rounded-md"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
                 <div>
                   <h4 className="font-bold text-black">Ibeth Trinidad.</h4>
                   <div className="flex text-yellow-400">
