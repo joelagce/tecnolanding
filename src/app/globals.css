@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Cal Sans', sans-serif;
+} 
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-roboto: "Roboto", sans-serif; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +28,42 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
 }
+
+.animate-slide {
+  animation: slide 6s infinite;
+  display: flex;
+  width: 200%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 15s linear infinite;
+  display: flex;
+  width: 200%;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+

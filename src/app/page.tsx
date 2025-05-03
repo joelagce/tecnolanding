@@ -3,21 +3,15 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function Home() {
   const [activeBuy, setActiveBuy] = useState(1);
 
   return (
-    <div className="bg-blue-700">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 ">
       {/* Barra de anuncio de envío gratis */}
-      <div className="bg-blue-700 text-white py-2">
-        <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-          </svg>
-          <span className="font-medium">¡Envío gratis en compra de 3x2!</span>
-        </div>
-      </div>
+     
 
     
 <AnimatePresence >
@@ -27,7 +21,7 @@ export default function Home() {
                         exit={{ opacity: 0, scale: 0 }}
                         key="box"
   >
-      <section id='hero' className=" bg-blue-700   mx-auto px-4 pt-8">
+      <section id='hero' className="   mx-auto px-4 pt-8">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8 items-center">
           {/* Columna Izquierda - Imagen */}
           <div className="relative">
@@ -58,7 +52,7 @@ export default function Home() {
            
             
 
-            <h1 className="text-4xl text-white font-bold">Funda Personalizada Para Celular</h1>
+            <h1 className="text-4xl text-white font-bold">Funda Personalizada para<br></br><span className='text-6xl text-black'> Tu Iphone</span></h1>
 
             {/* Precios */}
             <div className="flex items-center gap-4">
@@ -71,7 +65,7 @@ export default function Home() {
 
             {/* Opciones de Compra */}
             <div className="space-y-4">
-              <div onClick={() => setActiveBuy(0)} className={`border cursor-pointer rounded-lg p-4 flex items-center justify-between bg-transparent ${activeBuy === 0 ? 'bg-white text-black' : 'text-white'}`}>
+              <div onClick={() => setActiveBuy(0)} className={`border cursor-pointer rounded-lg p-4 flex items-center justify-between bg-transparent ${activeBuy === 0 ? 'bg-white text-black border-none' : 'text-white'}`}>
                 <div>
                   <h3 className="font-semibold">Compra 1</h3>
                   <p className="">Precio normal</p>
@@ -82,7 +76,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div onClick={()=>setActiveBuy(1)} className={`border rounded-lg cursor-pointer p-4 flex items-center justify-between  bg-transparent relative ${activeBuy === 1 ? 'bg-white text-black' : 'text-white'}`}>
+              <div onClick={()=>setActiveBuy(1)} className={`border rounded-lg cursor-pointer p-4 flex items-center justify-between  bg-transparent relative ${activeBuy === 1 ? 'bg-white text-black border-none' : 'text-white'}`}>
                 <div className="absolute -top-3 right-4 bg-black text-white text-xs px-2 py-1 rounded">
                   ¡TERMINA PRONTO!
                 </div>
@@ -91,8 +85,8 @@ export default function Home() {
                   <p className="">Diseña distintos modelos</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-bold ">$700.00</p>
-                  <p className=" line-through">$1050.00</p>
+                  <p className="font-bold ">$698.00</p>
+                  <p className=" line-through">$1047.00</p>
                 </div>
               </div>
                <Link href={activeBuy === 0 ? "https://buy.stripe.com/test_9AQ01VeWfb8V9XO6oo" : "https://buy.stripe.com/test_fZe7un7tNel71riaEF"}>
@@ -132,6 +126,39 @@ export default function Home() {
       </motion.div>
 
       </AnimatePresence>
+<div className='relative'>
+      <div className="bg-amber-400 bg-opacity-40 h-24 absolute left-0 right-0 text-black  text-xl ">
+        
+      </div>
+      <div className="bg-gradient-to-r from-amber-300 to-yellow-500 shadow-2xl h-24 absolute flex items-center rotate-[-4deg] left-0 right-0 text-black text-4xl  overflow-hidden">
+        <div className="flex animate-infinite-scroll whitespace-nowrap">
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+          <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
+            <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
+          </div>
+        </div>
+      </div>
+      </div>
 
       {/* Sección de Características */}
       <section className="bg-gray-50 py-16">
@@ -168,7 +195,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* Seccion de instagram feed   */}
+      <section className="py-16  bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-black text-center mb-12">Nuestros videos</h2>
+     
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <InstagramEmbed url="https://www.instagram.com/p/DIwx9szpNHS/" />
+      <InstagramEmbed url="https://www.instagram.com/p/DI2IRBXzauD/" />
+      <InstagramEmbed url="https://www.instagram.com/p/DIhwlIcz5vL/" />
+    </div>
+    </div>
+      </section>  
+    {/* Seccion de para que iphones tenemos fundas */}
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-black text-center mb-12">Para que iphones tenemos fundas</h2>
+      </div>
+    </section>
       {/* Sección de Testimonios */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -239,6 +283,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Call to Action Final */}
       <section className="bg-blue-900 text-white py-16">
