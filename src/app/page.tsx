@@ -35,7 +35,7 @@ export default function Home() {
             </div>
              {/* Imagen Principal */}
              <div className="relative w-full h-full">
-             <div className='bg-white rounded-full w-[300px] h-[300px] md:w-[500px] md:h-[500px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
+             <div className='bg-white rounded-full h-3/4 w-3/4  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
            
               <img 
                 src="/fundahero.png"
@@ -127,10 +127,10 @@ export default function Home() {
 
       </AnimatePresence>
 <div className='relative'>
-      <div className="bg-amber-400 bg-opacity-40 h-24 absolute left-0 right-0 text-black  text-xl ">
+      <div className="bg-amber-400 bg-opacity-40 h-16 md:h-24 absolute left-0 right-0 text-black  text-xl ">
         
       </div>
-      <div className="bg-gradient-to-r from-amber-300 to-yellow-500 shadow-2xl h-24 absolute flex items-center rotate-[-4deg] left-0 right-0 text-black text-4xl  overflow-hidden">
+      <div className="bg-gradient-to-r from-amber-300 to-yellow-500 shadow-2xl h-16 md:h-24 absolute flex items-center rotate-[-4deg] left-0 right-0 text-black text-2xl md:text-4xl  overflow-hidden">
         <div className="flex animate-infinite-scroll whitespace-nowrap">
           <div className="container mx-auto px-4 flex items-center justify-center space-x-2">
             <span className="font-bold">¡Envío gratis en compra de 3x2!</span>
@@ -163,7 +163,7 @@ export default function Home() {
       {/* Sección de Características */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">Características de Nuestras Fundas</h2>
+          <h2 className="text-3xl font-bold text-center text-black mt-12 md:mt-12 mb-12">Características de Nuestras Fundas</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="text-blue-600 mb-4">
@@ -190,7 +190,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-black mb-2">Entrega Rápida</h3>
-              <p className="text-gray-600">Recibe tu funda personalizada en tiempo récord, con envío gratis en compras mayores a $500.</p>
+              <p className="text-gray-600">Recibe tu funda personalizada en tiempo récord, con envío gratis en compra de promocion de 3x2.</p>
             </div>
           </div>
         </div>
@@ -207,16 +207,10 @@ export default function Home() {
     </div>
     </div>
       </section>  
-    {/* Seccion de para que iphones tenemos fundas */}
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-black text-center mb-12">Para que iphones tenemos fundas</h2>
-      </div>
-    </section>
-      {/* Sección de Testimonios */}
-      <section className="py-16 bg-white">
+       {/* Sección de Testimonios */}
+       <section className="py-16 bg-gradient-to-r from-cyan-500 to-blue-500">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-black text-center mb-12">Lo que dicen nuestros clientes</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Lo que dicen nuestros clientes</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testimonio 1 */}
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -283,6 +277,123 @@ export default function Home() {
           </div>
         </div>
       </section>
+    {/* Seccion de para que iphones tenemos fundas */}
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-black text-center mb-12">Modelos de iphone que tenemos</h2>
+        <div className="grid grid-cols-2 text-black md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone X</h3>
+            <p className="text-gray-600">5.8&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone XR</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone XS</h3>
+            <p className="text-gray-600">5.8&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone XS Max</h3>
+            <p className="text-gray-600">6.5&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 11</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 11 Pro</h3>
+            <p className="text-gray-600">5.8&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 11 Pro Max</h3>
+            <p className="text-gray-600">6.5&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 12</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 12 Mini</h3>
+            <p className="text-gray-600">5.4&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 12 Pro</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 12 Pro Max</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 13</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 13 Mini</h3>
+            <p className="text-gray-600">5.4&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 13 Pro</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 13 Pro Max</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 14</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 14 Plus</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 14 Pro</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 14 Pro Max</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 15</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 15 Plus</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 15 Pro</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 15 Pro Max</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 16</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 16 Plus</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 16 Pro</h3>
+            <p className="text-gray-600">6.1&quot;</p>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg text-center cursor-pointer hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
+            <h3 className="font-bold text-lg mb-2">iPhone 16 Pro Max</h3>
+            <p className="text-gray-600">6.7&quot;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+     
 
 
       {/* Call to Action Final */}
