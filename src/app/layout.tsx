@@ -3,9 +3,9 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Landing Tecno - Tu Solución Digital",
-  description: "Descubre las mejores soluciones tecnológicas para tu negocio",
-  keywords: "tecnología, soluciones digitales, innovación",
+  title: "Tecnophone - Fundas personalizadas",
+  description: "Descubre las mejores fundas personalizadas para tu iphone",
+  keywords: "tecnophone, fundas, personalizadas, iphone"
 };
 
 export default function RootLayout({
