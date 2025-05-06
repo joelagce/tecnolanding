@@ -89,7 +89,7 @@ export default function Home() {
                   <p className=" line-through">$1047.00</p>
                 </div>
               </div>
-               <Link href={activeBuy === 0 ? "https://buy.stripe.com/test_9AQ01VeWfb8V9XO6oo" : "https://buy.stripe.com/test_fZe7un7tNel71riaEF"}>
+               <Link href={activeBuy === 0 ? "https://buy.stripe.com/28o5mpbKyfd29kkbII" : "https://buy.stripe.com/8wMbKNaGufd22VW001"}>
               <button className="w-full cursor-pointer bg-black text-white font-bold py-4 rounded-lg  transition-colors">
                 Comprar mi funda
               </button>

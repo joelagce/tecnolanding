@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function Success() {
   return (
-    <div className="min-h-screen bg-blue-700 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center p-4">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function Success() {
         <div className="space-y-6">
           {/* Paso 1 */}
           <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Envía tu diseño</h3>
               <p className="text-gray-600">Comparte el diseño que elegiste a través de WhatsApp</p>
@@ -49,7 +49,7 @@ export default function Success() {
 
           {/* Paso 2 */}
           <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Fabricación de tu funda</h3>
               <p className="text-gray-600">Una vez que recibamos tu diseño, procederemos a fabricar tu funda personalizada</p>
@@ -58,7 +58,7 @@ export default function Success() {
 
           {/* Paso 3 */}
           <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Envío de tu pedido</h3>
               <p className="text-gray-600">Te enviaremos tu funda personalizada a la dirección proporcionada</p>
